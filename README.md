@@ -5,14 +5,14 @@
 ## Introduction
 Welcome to the **SequentialAgents**, a cutting-edge agentic framework designed to perform complex software engineering tasks without constant human supervision. Unlike standard chatbots, this agent operates in a continuous **Autonomous Execution Loop**. It chains tools to list files, read code, apply fuzzy-logic edits, and verify its own work, stopping only when the task is fully complete.
 
-## 🚀 Key Features
-*   **🔄 Autonomous Execution Loop:** Chains actions (List → Read → Edit → Verify) automatically without pausing for user input.
-*   **✨ Fuzzy-Logic File Editing:** Includes a smart `apply_file_edit` tool that handles indentation corrections and whitespace mismatches, preventing common AI coding errors.
-*   **🌐 Multi-Provider Support:** Pre-configured for **Google Gemini 2.0 Flash** (Free Tier), OpenAI GPT-4o, Claude 3.5, and local models via Ollama.
-*   **🛡️ Safe Workspace:** Confined to a specific directory to prevent accidental system changes.
-*   **📚 Context Loading:** Can `/load` entire codebases into memory for deep context awareness.
+##  Features
+*   ** Autonomous Execution Loop:** Chains actions (List → Read → Edit → Verify) automatically without pausing for user input.
+*   ** Fuzzy-Logic File Editing:** Includes a smart `apply_file_edit` tool that handles indentation corrections and whitespace mismatches, preventing common AI coding errors.
+*   ** Multi-Provider Support:** Pre-configured for **Google Gemini 2.0 Flash** (Free Tier), OpenAI GPT-4o, Claude 3.5, and local models via Ollama.
+*   ** Safe Workspace:** Confined to a specific directory to prevent accidental system changes.
+*   ** Context Loading:** Can `/load` entire codebases into memory for deep context awareness.
 
-## 🛠️ Installation
+##  Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -30,7 +30,7 @@ Welcome to the **SequentialAgents**, a cutting-edge agentic framework designed t
     python main.py
     ```
 
-## ⚙️ Configuration
+##  Configuration
 On the first run, the agent generates a `config.json` file.
 1.  Open `config.json`.
 2.  Add your API Key (e.g., for Google AI Studio or OpenAI).
@@ -38,7 +38,7 @@ On the first run, the agent generates a `config.json` file.
 
 *Note: `config.json` is automatically git-ignored to keep your keys safe.*
 
-## 💻 Usage
+##  Usage
 *   `/workspace <path>`: **Required.** Set the working directory.
 *   `/load`: Load all text files in the workspace into context.
 *   `/new`: Start a fresh session.
