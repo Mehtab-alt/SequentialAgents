@@ -1,0 +1,13 @@
+# Secrets & Configs
+config.json
+.env
+secrets.yaml
+
+# Python & System
+__pycache__/
+*.pyc
+venv/
+env/
+.vscode/
+.idea/
+.DS_Store
